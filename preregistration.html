@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <title>Preregistartion</title>
+
+    <style>
+
+        .fa-car--blue{
+            color: blue;
+        }
+        .form--text--xs{
+            font-size: 12px;
+        }
+
+        .border--style--dotted{
+            border-style: dotted;
+        }
+    </style>
+</head>
+<body>
+
+    <svg class="position-absolute">
+        <polygon points="0 150 , 0 0 , 40 0" style="fill: rgb(4, 42, 124);"/>
+    </svg>
+
+<div class="body position-relative">    
+    <nav class="navbar navbar-expand-sm fst-italic">
+        <div class="container-fluid px-5 ">
+            <a class="navbar-brand" href="#"><i class="fa fa-car fa-2x fa-car--blue"></i></a>
+
+                
+                <ul class="navbar-nav d-flex align-items-end">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-primary" href="#"><span class="fw-bolder fs-4 ">Preregistration</span></a>
+                    </li>
+                    
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">New vehicles</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul> 
+                    </li>
+
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Customs</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul> 
+                    </li>
+
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Admins</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul> 
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Email@inchcape.com</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">See your profile</a></li>
+                                <li><a class="dropdown-item" href="#">Account Setting</a></li>
+                                <li><a class="dropdown-item" href="#">Log out</a></li>
+                            </ul> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-light h-100 fst-italic p-4">
+        <h2> Initial Vehicle Information</h2>
+        
+        <div class="row">
+            <div class="col-2">
+                <button type="submit" class="btn btn-primary w-30 my-1 rounded-2 btn-sm fst-italic">Send Selected</button>
+                
+                <div class="col__for-filter d-flex flex-column">
+                <label class="mt-3 mb-1">State</label>
+                <select class="custom-select">
+                    <option selected><span class="text-light">Nothing selected</span></option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+
+                <label class="mt-3 mb-1">Created by</label>
+                <select class="custom-select">
+                    <option selected>Nothing selected</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+
+                <label class="mt-3 mb-1">Date created - From</label>
+                <input type="date">
+
+                <label class="mt-3 mb-1">Date created - To</label>
+                <input type="date">
+
+                <div class="change my-3">
+                    <button type="submit" class="btn btn-primary w-20 my-1 rounded-2 btn-sm fst-italic">Apply Filter</button>
+                    <a href="" class="small text-decoration-none text-secondary ps-3">Reset</a>
+                </div></div>
+
+                <div class="for-upload border--style--dotted border-primary px-3 py-5">
+                    
+                    <form>
+                        <input type="file" id="file" multiple class="d-none"/>
+                        <p class="form--text--xs"><span>Drop files here </span><label for="file" class="strong"><strong> or click to upload</strong>.</label></p>      
+                    </form>
+
+                    <label class="ps-2 form--text--xs">Company</label><br>
+                    <select class="custom-select">
+                        <option selected>Nothing selected</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>  
+            </div>
+
+            <div class="col-10">
+                <div class="col__pages d-flex justify-content-between">
+                    <div class="col__page-cursor">
+                        <ul class="pagination ">
+                            <li class="page-item"><a class="page-link bg-secondary text-white" href="#">Prev</a></li>
+                            <li class="page-item"><a class="page-link bg-secondary text-white" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link bg-secondary text-white" href="#">Next</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col__page-result">
+                        <label>Results per page:</label>
+                        <input class="w-25" type="text">
+                    </div>
+                </div>
+
+                <table class="table table-bordered form--text--xs">
+                    <thead>
+                      <tr>
+                            <th><input class="form-check-input mx-2" type="checkbox"></th>
+                            <th>Vin</th>
+                            <th>State</th>
+                            <th>TemplateName</th>
+                            <th>MaskName</th>
+                            <th>Remark</th>
+                            <th>TargetOrganization</th>
+                            <th>CreatedBy</th>
+                            <th>CreatedOn</th>
+                            <th>LastModified</th>
+                            <th></th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><input class="form-check-input mx-2" type="checkbox"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="#">Edit</a>/<a href="#">Detail</a>/<a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td><input class="form-check-input mx-2" type="checkbox"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="#">Edit</a>/<a href="#">Detail</a>/<a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td><input class="form-check-input mx-2" type="checkbox"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="#">Edit</a>/<a href="#">Detail</a>/<a href="#">Delete</a></td>
+                        </tr>
+
+                    </tbody>
+                  </table>
+                  
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</html
